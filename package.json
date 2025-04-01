@@ -2,18 +2,30 @@
   "name": "template-basic",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier src/index.html --check"
+    "format": "prettier src/index.html --check",
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^3.1.9",
     "prettier": "^3.2.5"
   },
   "prettier": {
     "singleQuote": true
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@fastify/cors": "^11.0.1",
+    "@fastify/multipart": "^9.0.3",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.2",
+    "@sinclair/typebox": "^0.34.30",
+    "fastify": "^5.2.2"
   }
 }
